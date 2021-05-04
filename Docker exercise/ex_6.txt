@@ -1,0 +1,6 @@
+#Create network
+docker network create test-app
+#Create nginx container in test-app
+docker run -d --network test-app --name nginx nginx
+#Create redis container in test-app
+docker run -d --network test-app --name redis redis

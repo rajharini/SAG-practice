@@ -1,0 +1,8 @@
+FROM cent0s:7
+RUN yum -y update
+RUN yum -y install python
+RUN yum -y install epel-release && yum clean all
+RUN yum -y install python-pip && yum clean all
+RUN pip install flask
+COPY time.py /home/sourcecode
+ENTRYPOINT FLASK_APP=home/sourcecode/hello.py flask run --host 0.0.0.0

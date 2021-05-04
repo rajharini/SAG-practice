@@ -1,0 +1,1 @@
+docker run -d -v /mnt/redis-data:/data --name redis redis:6.2.2

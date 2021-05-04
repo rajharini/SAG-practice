@@ -1,0 +1,2 @@
+docker build . -t hellow -f dockerfile
+docker run --publish 5000:5000 hellow
