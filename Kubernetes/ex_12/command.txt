@@ -1,0 +1,3 @@
+kubectl create -f  deployment_definition.yaml
+kubectl create -f  service_definition.yaml
+kubectl create -f  ingress_definition.yaml
